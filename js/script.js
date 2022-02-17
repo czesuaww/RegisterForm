@@ -84,7 +84,6 @@ const checkErrors = () => {
   if (errorCount === 0) {
     popup.classList.add("show-popup");
   }
-  console.log("dupa");
 };
 
 clearBtn.addEventListener("click", (e) => {
