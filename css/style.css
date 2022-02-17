@@ -16,7 +16,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
-  padding: 2em;
+  padding: 1em;
   background-image: linear-gradient(315deg, #c6d2e6 0%, #8a9ca1 74%);
 }
 
@@ -29,40 +29,40 @@ body {
 }
 
 form {
-  padding: 40px;
-  font-size: 20px;
+  padding: 2em;
+  font-size: 1.2rem;
 }
 
 form h1 {
-  margin-bottom: 30px;
+  margin-bottom: 1em;
   text-align: center;
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: 10px;
-  color: orange;
+  color: #ffa600;
 }
 
 form .formBox {
-  margin-bottom: 15px;
+  margin-bottom: 0.8em;
 }
 
 form .formBox label {
   display: inline-block;
-  margin-bottom: 5px;
-  color: white;
+  margin-bottom: 0.3em;
+  color: #fff;
   font-weight: 100;
 }
 
 form .formBox input {
   width: 100%;
-  padding: 10px;
-  font-size: 16px;
+  padding: 0.5em;
+  font-size: 1rem;
   border: 1px solid #c5c5c5;
 }
 
 form .formBox__errorText {
   margin: 5px 0 0 10px;
-  font-size: 14px;
+  font-size: 1rem;
   color: tomato;
   visibility: hidden;
 }
@@ -80,12 +80,12 @@ form .formBox.error .formBox__errorText {
 .control-buttons__clear,
 .popup__close {
   display: block;
-  padding: 10px 0;
-  margin-left: 10px;
+  padding: 0.8em 0;
+  margin: 0.3em;
   width: 100px;
-  font-size: 18px;
-  background-color: black;
-  color: orange;
+  font-size: 1.2rem;
+  background-color: #000;
+  color: #ffa600;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -129,7 +129,7 @@ form .formBox.error .formBox__errorText {
   text-align: center;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 300px;
+  width: 350px;
   height: 200px;
   background-color: #fff;
   border-radius: 8px;

@@ -1,3 +1,5 @@
+@import "./colors";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,59 +11,59 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 2em;
-  background-image: linear-gradient(315deg, #c6d2e6 0%, #8a9ca1 74%);
+  padding: 1em;
+  background-image: $back-color;
 }
 
 .wrapper {
   max-width: 440px;
   width: 100%;
-  background-color: #333;
-  box-shadow: 0 0 10px #000;
+  background-color: $back-wrap-color;
+  box-shadow: $shadow-wrapper;
 }
 
 form {
-  padding: 40px;
-  font-size: 20px;
+  padding: 2em;
+  font-size: 1.2rem;
 
   h1 {
-    margin-bottom: 30px;
+    margin-bottom: 1em;
     text-align: center;
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 10px;
-    color: orange;
+    color: $orange;
   }
 
   .formBox {
-    margin-bottom: 15px;
+    margin-bottom: 0.8em;
 
     label {
       display: inline-block;
-      margin-bottom: 5px;
-      color: white;
+      margin-bottom: 0.3em;
+      color: $white;
       font-weight: 100;
     }
 
     input {
       width: 100%;
-      padding: 10px;
-      font-size: 16px;
-      border: 1px solid rgb(197, 197, 197);
+      padding: 0.5em;
+      font-size: 1rem;
+      border: 1px solid $border-color;
     }
 
     &__errorText {
       margin: 5px 0 0 10px;
-      font-size: 14px;
-      color: tomato;
+      font-size: 1rem;
+      color: $error-color;
       visibility: hidden;
     }
   }
 
   .formBox.error {
     input {
-      border: 1px solid tomato;
-      background-color: rgba(0, 137, 250, 0.1);
+      border: 1px solid $error-color;
+      background-color: $input-error-color;
     }
   }
 
@@ -74,19 +76,19 @@ form {
 .control-buttons__clear,
 .popup__close {
   display: block;
-  padding: 10px 0;
-  margin-left: 10px;
+  padding: 0.8em 0;
+  margin: 0.3em;
   width: 100px;
-  font-size: 18px;
-  background-color: black;
-  color: orange;
+  font-size: 1.2rem;
+  background-color: $black;
+  color: $orange;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.4s;
 
   &:hover {
-    background-color: rgb(28, 33, 36);
+    background-color: $hover-button-color;
   }
 }
 .control-buttons {
@@ -105,7 +107,7 @@ form {
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
-  width: 300px;
+  width: 350px;
   height: 200px;
   background-color: #fff;
   border-radius: 8px;
