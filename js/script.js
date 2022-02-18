@@ -49,14 +49,14 @@ const checkLength = (input, minValue) => {
       `${input.previousElementSibling.innerText.slice(
         0,
         -1
-      )} składa się z min. ${minValue} znaków`
+      )} consists of at least ${minValue} characters`
     );
   }
 };
 
 const chceckPassword = (passwdOne, passwdTwo) => {
   if (passwdOne.value !== passwdTwo.value) {
-    showError(passwdTwo, "Hasła do siebie nie pasują");
+    showError(passwdTwo, "The passwords do not match");
   }
 };
 
@@ -67,7 +67,7 @@ const checkMail = (email) => {
   if (re.test(email.value)) {
     clearError(email);
   } else {
-    showError(email, `E-mail jest niepoprawny`);
+    showError(email, `This E-mail is invalid`);
   }
 };
 
@@ -95,7 +95,7 @@ sendBtn.addEventListener("click", (e) => {
   e.preventDefault();
   checkForm(inputArray);
   checkLength(username, 5);
-  checkLength(pass, 10);
+  checkLength(pass, 6);
   chceckPassword(pass, pass2);
   checkMail(email);
   checkErrors();
